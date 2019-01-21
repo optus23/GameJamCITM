@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerGame3 : MonoBehaviour {
 
-    Vector3 offset;
+    public List<GameObject> balls;
+    private Vector3 offset;
+
     // Use this for initialization
     void Start()
     {
@@ -19,5 +21,10 @@ public class PlayerGame3 : MonoBehaviour {
     private void OnMouseDrag()
     {
         transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0.0f)) + offset;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       
     }
 }

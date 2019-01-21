@@ -64,7 +64,6 @@
     <Compile Include="Assets\PickLock.cs" />
     <Compile Include="Assets\Rotator.cs" />
     <Compile Include="Assets\scip.cs" />
-    <Compile Include="Assets\Scripts\BallManager.cs" />
     <Compile Include="Assets\Scripts\PlayerGame3.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/alejandroaureliogn/Documents/GitHub/GameJamCITM/SorpresaGameJam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
