@@ -13,21 +13,15 @@ public class scip : MonoBehaviour {
     private float mMovementX = 0;
     private float mMovementY = 0;
 
-    void Awake()
+    void Start()
     {
         mRigidbody2D = this.GetComponent<Rigidbody2D>();
-
-
-        mMovementX = UnityEngine.Random.Range(10F, 20F);
-        mMovementY = UnityEngine.Random.Range(10F, 20F);
-
-        mRigidbody2D.velocity = new Vector2(mMovementX, mMovementY);
+        mRigidbody2D.velocity = new Vector2(30.0f, 0);
+        mRigidbody2D.velocity = Quaternion.AngleAxis( Random.Range(0, 360), Vector3.forward) * mRigidbody2D.velocity;
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    private void Update()
     {
-        Vector3 normal = (board.transform.position - transform.position).normalized;
-
-        mRigidbody2D.velocity = Vector2.Reflect(mRigidbody2D.velocity, normal);
+        
     }
 }
