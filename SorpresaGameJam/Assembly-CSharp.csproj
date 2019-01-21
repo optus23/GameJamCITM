@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PickLock.cs" />
+    <Compile Include="Assets\Rotator.cs" />
     <Compile Include="Assets\scip.cs" />
     <Compile Include="Assets\Scripts\BallManager.cs" />
     <Compile Include="Assets\Scripts\PlayerGame3.cs" />
