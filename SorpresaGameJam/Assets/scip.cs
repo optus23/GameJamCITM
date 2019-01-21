@@ -16,7 +16,7 @@ public class scip : MonoBehaviour {
     void Start()
     {
         mRigidbody2D = this.GetComponent<Rigidbody2D>();
-        mRigidbody2D.velocity = new Vector2(30.0f, 0);
+        mRigidbody2D.velocity = new Vector2(20.0f, 0);
         mRigidbody2D.velocity = Quaternion.AngleAxis( Random.Range(0, 360), Vector3.forward) * mRigidbody2D.velocity;
     }
 
