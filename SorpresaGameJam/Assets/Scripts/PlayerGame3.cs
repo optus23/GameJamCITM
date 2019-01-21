@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerGame3 : MonoBehaviour {
 
-    public List<GameObject> balls;
+    private GameObject[] balls;
     private Vector3 offset;
 
     // Use this for initialization
     void Start()
     {
         offset.Set(0.0f, 0.0f, 0.0f);
+        balls = GameObject.FindGameObjectsWithTag("Ball");
     }
 
     private void OnMouseDown()
@@ -25,6 +26,9 @@ public class PlayerGame3 : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       
+       if (collision.gameObject.tag == "Ball")
+        {
+            
+        }
     }
 }
