@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Clip
   - UnLocked
+  - Ball
   layers:
   - Default
   - TransparentFX

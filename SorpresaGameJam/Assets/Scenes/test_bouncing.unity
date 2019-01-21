@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 317325105}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -949,11 +949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 602f7dacf0f8ad049933c419dea24518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balls:
-  - {fileID: 317325100}
-  - {fileID: 1741748256}
-  - {fileID: 1876105710}
-  - {fileID: 1652277044}
 --- !u!1 &1455269402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,7 +1163,7 @@ GameObject:
   - component: {fileID: 1652277045}
   m_Layer: 0
   m_Name: Ball (3)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1565,7 +1560,7 @@ GameObject:
   - component: {fileID: 1741748257}
   m_Layer: 0
   m_Name: Ball (1)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1690,7 +1685,7 @@ GameObject:
   - component: {fileID: 1876105711}
   m_Layer: 0
   m_Name: Ball (2)
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
