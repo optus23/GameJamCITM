@@ -6,7 +6,7 @@ public class scip : MonoBehaviour {
 
     public GameObject board;
 
-    public float MoveSpeed = 40.0F;
+    public float MoveSpeed = 20.0F;
 
     private Rigidbody2D mRigidbody2D;
 
@@ -18,10 +18,15 @@ public class scip : MonoBehaviour {
         mRigidbody2D = this.GetComponent<Rigidbody2D>();
 
 
-        mMovementX = UnityEngine.Random.Range(10F, 20F);
-        mMovementY = UnityEngine.Random.Range(10F, 20F);
+        mMovementX = UnityEngine.Random.Range(10F, 15F);
+        mMovementY = UnityEngine.Random.Range(10F, 15F);
 
         mRigidbody2D.velocity = new Vector2(mMovementX, mMovementY);
+    }
+
+    void Update()
+    {
+        //InvokeRepeating("Awake", 5.0f,5.0f);
     }
 
     void OnTriggerExit2D(Collider2D other)
