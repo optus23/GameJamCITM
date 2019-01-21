@@ -8,6 +8,7 @@ public class JumpPlayer : MonoBehaviour {
     public float jump_amount = 250f;
     public Sprite jumping;
     public Sprite idle;
+    public float speed;
 
 
 	void Update ()
@@ -25,7 +26,8 @@ public class JumpPlayer : MonoBehaviour {
         {
             GetComponent<SpriteRenderer>().sprite = idle;
         }
-	}
+        transform.position += Vector3.right * speed * Time.deltaTime;
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

@@ -53,9 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\follow.cs" />
      <Compile Include="Assets\PickLock.cs" />
      <Compile Include="Assets\Rotator.cs" />
      <Compile Include="Assets\Runner.cs" />
+     <Compile Include="Assets\Scenes.cs" />
      <Compile Include="Assets\scip.cs" />
      <Compile Include="Assets\Scripts\JumpPlayer.cs" />
      <Compile Include="Assets\Scripts\PlayerGame3.cs" />
