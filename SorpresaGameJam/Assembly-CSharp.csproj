@@ -61,13 +61,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\follow.cs" />
     <Compile Include="Assets\PickLock.cs" />
     <Compile Include="Assets\Rotator.cs" />
     <Compile Include="Assets\Runner.cs" />
+    <Compile Include="Assets\Scenes.cs" />
     <Compile Include="Assets\Scripts\BouncingGame\BallScript.cs" />
-    <Compile Include="Assets\Scripts\BouncingGame\GameManager.cs" />
+    <Compile Include="Assets\Scripts\BouncingGame\BouncingGameManager.cs" />
     <Compile Include="Assets\Scripts\BouncingGame\PlayerScript.cs" />
-    <Compile Include="Assets\Scripts\JumpPlayer.cs" />
+    <Compile Include="Assets\Scripts\JumpingGame\JumpPlayer.cs" />
+    <Compile Include="Assets\Tools\Timer.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Documentos/GitHub Projects/GameJamCITM/SorpresaGameJam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

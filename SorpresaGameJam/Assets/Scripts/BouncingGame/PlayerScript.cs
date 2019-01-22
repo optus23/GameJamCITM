@@ -8,14 +8,14 @@ public class PlayerScript : MonoBehaviour {
     private Vector3 offset;
     private Rigidbody2D mRigidbody2D;
     private bool updatePosition = false;
-    private GameManager gameManager;
+    private BouncingGameManager gameManager;
 
     // Use this for initialization
     void Start()
     {
         offset.Set(0.0f, 0.0f, 0.0f);
         mRigidbody2D = this.GetComponent<Rigidbody2D>();
-        gameManager = GameObject.FindObjectOfType<GameManager>();
+        gameManager = GameObject.FindObjectOfType<BouncingGameManager>();
     }
 
     private void FixedUpdate()
