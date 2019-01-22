@@ -9,9 +9,14 @@ public class PickLock : MonoBehaviour {
     private Vector3 offset;
     private bool reset = false;
 
+    public AudioClip DieClip;
+    private AudioSource audioPlayer;
+
     private void Start()
     {
         spawn = GameObject.Find("StartPoint").transform.position;
+        audioPlayer = GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -34,13 +39,16 @@ public class PickLock : MonoBehaviour {
     {
         if (collision.gameObject.tag == "UnLocked")
         {
-            //win
             Debug.Log("UNLOCKED");
+            //win
+
         }
         else
         {
             Debug.Log("Key Colliding");
             transform.position = spawn;
+            audioPlayer.clip = DieClip;
+            audioPlayer.Play();
             reset = true;
         }
     }

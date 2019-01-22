@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class JumpPlayer : MonoBehaviour {
 
+
+    public AudioClip JumpClip;
+    public AudioClip DieClip;
+
     bool can_jump = true;
     public float jump_amount = 250f;
     public Sprite jumping;
@@ -11,18 +15,22 @@ public class JumpPlayer : MonoBehaviour {
     public float speed;
     private Vector3 spawn;
 
+    private AudioSource audioPlayer;
+
     void Start()
     {
-
+        audioPlayer = GetComponent<AudioSource>();
     }
 
-	void Update ()
+    void Update ()
     {
         transform.rotation = Quaternion.identity;
-        if (Input.GetKeyDown("up") && can_jump)
+        if ((Input.GetKeyDown("up") || Input.GetKeyDown("space") || Input.GetMouseButton(0)) && can_jump)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jump_amount));
             can_jump = false;
+            audioPlayer.clip = JumpClip;
+            audioPlayer.Play();
         }
         if(!can_jump)
         {
@@ -40,15 +48,16 @@ public class JumpPlayer : MonoBehaviour {
         if(collision.gameObject.tag == "Ground")
         {
             can_jump = true;
-            Debug.Log("Hi");
         }
         if(collision.gameObject.tag == "Ric")
         {
             transform.position = GameObject.Find("Spawn").transform.position;
+            audioPlayer.clip = DieClip;
+            audioPlayer.Play();
         }
         if(collision.gameObject.tag == "Aprovat")
         {
-            //WIN
+            //TO DO: WIN
         }
     }
 }
