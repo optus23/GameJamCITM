@@ -78,10 +78,10 @@ public class RoomManager : MonoBehaviour {
     void Load()
     {
         XmlElement root = xmlDoc.DocumentElement;
-        XmlNode roomNode = root.FirstChild;
-        XmlNode propsNode = root.LastChild;
+        XmlNode roomNode = root.LastChild;
+        XmlNode propsNode = root.FirstChild;
 
-        currentRoom = int.Parse(roomNode.Attributes["active"].Value);
+        currentRoom = System.Int32.Parse(roomNode.Attributes["id"].Value);
         ChangeRoom(currentRoom);
 
         XmlNode propNode = propsNode.FirstChild;

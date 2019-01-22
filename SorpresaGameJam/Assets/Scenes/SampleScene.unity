@@ -113,6 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &19979892
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +228,8 @@ Transform:
   m_Father: {fileID: 1231424906}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> a98dae2dd182a3fc32c454c70d1e0ef8f677699f
 --- !u!1 &92717312
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,12 +277,16 @@ MonoBehaviour:
   - LIVINGROOM
   - LIVINGROOM
   - BATHROOM
-  - KIDROOM
+  - KID ROOM
   roomsSprites:
   - {fileID: 21300000, guid: 9768dae62f0dd8647a29db5118b773b5, type: 3}
   - {fileID: 21300000, guid: ac4018d7f4853594ea3a237b2742ba51, type: 3}
   - {fileID: 21300000, guid: 78238ba5418bcdc4d86d776d70efd678, type: 3}
+<<<<<<< HEAD
   - {fileID: 0}
+=======
+  - {fileID: 21300000, guid: 6c3d3ecb68fea764c83ae3e3c3699c2f, type: 3}
+>>>>>>> a98dae2dd182a3fc32c454c70d1e0ef8f677699f
   roomObjectsPrefabs: []
 --- !u!1 &169293887
 GameObject:
@@ -464,6 +471,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 283966271}
+<<<<<<< HEAD
 --- !u!1 &299581984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,6 +1029,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> a98dae2dd182a3fc32c454c70d1e0ef8f677699f
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,6 +1092,7 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &519420032
+<<<<<<< HEAD
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1474,6 +1485,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!4 &867962708
+=======
+>>>>>>> a98dae2dd182a3fc32c454c70d1e0ef8f677699f
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1560,6 +1573,7 @@ Transform:
   m_Father: {fileID: 1884703424}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1062061824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +1688,8 @@ Transform:
   m_Father: {fileID: 439064863}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> a98dae2dd182a3fc32c454c70d1e0ef8f677699f
 --- !u!1 &1159823370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,6 +1764,7 @@ Transform:
   m_Father: {fileID: 1612970829}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.00001}
+<<<<<<< HEAD
 --- !u!1 &1224954792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,6 +1911,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> a98dae2dd182a3fc32c454c70d1e0ef8f677699f
 --- !u!1 &1612970825
 GameObject:
   m_ObjectHideFlags: 0

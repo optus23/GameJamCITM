@@ -10,12 +10,18 @@ public class PlayerScript : MonoBehaviour {
     private bool updatePosition = false;
     private BouncingGameManager gameManager;
 
+    public AudioClip DieClip;
+    private AudioSource audioPlayer;
+
+
     // Use this for initialization
     void Start()
     {
         offset.Set(0.0f, 0.0f, 0.0f);
         mRigidbody2D = this.GetComponent<Rigidbody2D>();
         gameManager = GameObject.FindObjectOfType<BouncingGameManager>();
+        audioPlayer = GetComponent<AudioSource>();
+
     }
 
     private void FixedUpdate()
@@ -47,6 +53,8 @@ public class PlayerScript : MonoBehaviour {
        if (collision.gameObject.tag == "Ball")
         {
             gameManager.GameOver();
+            audioPlayer.clip = DieClip;
+            audioPlayer.Play();
         }
     }
 }
