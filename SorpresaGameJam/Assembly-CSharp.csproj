@@ -72,7 +72,7 @@
     <Compile Include="Assets\Scripts\BouncingGame\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\JumpingGame\JumpPlayer.cs" />
     <Compile Include="Assets\Scripts\MainGame\RoomManager.cs" />
-    <Compile Include="Assets\sprite_click.cs" />
+    <Compile Include="Assets\Sprites\Props\sprite_click.cs" />
     <Compile Include="Assets\Tools\Timer.cs" />
     <None Include="Assets\Data\data.xml" />
     <Reference Include="UnityEditor.StandardEvents">
