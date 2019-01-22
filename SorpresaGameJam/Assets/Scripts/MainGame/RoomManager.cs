@@ -24,13 +24,21 @@ public class RoomManager : MonoBehaviour {
         GameObject roomSprite = GameObject.Find("RoomSprite");
         spriteRenderer = roomSprite.GetComponent<SpriteRenderer>();
         xmlDoc.Load(Application.dataPath + "/Data/data.xml");
-        Save();
+        Load();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ChangeRoom(++currentRoom);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        Save();
+    }
 
     void ChangeRoom(int roomId)
     {
@@ -55,7 +63,7 @@ public class RoomManager : MonoBehaviour {
         roomElement.SetAttribute("id", currentRoom.ToString());
         XmlElement propsElement = xmlDoc.CreateElement("props");
 
-        foreach (Transform child in roomObjectsPrefabs[currentRoom].transform)
+        foreach (Transform child in propsGameObject.transform)
         {
             XmlElement propElement = xmlDoc.CreateElement("prop");
             propElement.SetAttribute("active", child.gameObject.activeSelf.ToString());
@@ -70,10 +78,19 @@ public class RoomManager : MonoBehaviour {
     void Load()
     {
         XmlElement root = xmlDoc.DocumentElement;
-        XmlNode room = root.FirstChild;
-        currentRoom = int.Parse(room.Attributes["active"].Value);
+        XmlNode roomNode = root.FirstChild;
+        XmlNode propsNode = root.LastChild;
+
+        currentRoom = int.Parse(roomNode.Attributes["active"].Value);
         ChangeRoom(currentRoom);
 
+        XmlNode propNode = propsNode.FirstChild;
+
+        foreach (Transform child in propsGameObject.transform)
+        {
+            child.gameObject.SetActive(bool.Parse(propNode.Attributes["active"].Value));
+            propNode = propNode.NextSibling;
+        }
     }
 
 }
