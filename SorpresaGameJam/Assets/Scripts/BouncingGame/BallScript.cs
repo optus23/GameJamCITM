@@ -2,16 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scip : MonoBehaviour {
-
-    public GameObject board;
-
-    public float MoveSpeed = 40.0F;
+public class BallScript : MonoBehaviour {
 
     private Rigidbody2D mRigidbody2D;
-
-    private float mMovementX = 0;
-    private float mMovementY = 0;
+    private float speed = 1.0f;
 
     void Start()
     {
@@ -22,7 +16,8 @@ public class scip : MonoBehaviour {
 
     private void Update()
     {
-        mRigidbody2D.velocity = mRigidbody2D.velocity + mRigidbody2D.velocity.normalized * Time.deltaTime * 0.4f ;
+        mRigidbody2D.velocity = mRigidbody2D.velocity.normalized * speed;
+        speed += 0.3F * Time.deltaTime;
     }
 
 
