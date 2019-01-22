@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\MainGame\RoomManager.cs" />
     <Compile Include="Assets\sprite_click.cs" />
     <Compile Include="Assets\Tools\Timer.cs" />
+    <None Include="Assets\Data\data.xml" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/marcfv1/Documents/GitHub/GameJamCITM/SorpresaGameJam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
