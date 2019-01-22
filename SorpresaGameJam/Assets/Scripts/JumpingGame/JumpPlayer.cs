@@ -9,11 +9,17 @@ public class JumpPlayer : MonoBehaviour {
     public Sprite jumping;
     public Sprite idle;
     public float speed;
+    private Vector3 spawn;
 
+    void Start()
+    {
+
+    }
 
 	void Update ()
     {
-		if(Input.GetKeyDown("up") && can_jump)
+        transform.rotation = Quaternion.identity;
+        if (Input.GetKeyDown("up") && can_jump)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jump_amount));
             can_jump = false;
@@ -35,6 +41,14 @@ public class JumpPlayer : MonoBehaviour {
         {
             can_jump = true;
             Debug.Log("Hi");
+        }
+        if(collision.gameObject.tag == "Ric")
+        {
+            transform.position = GameObject.Find("Spawn").transform.position;
+        }
+        if(collision.gameObject.tag == "Aprovat")
+        {
+            //WIN
         }
     }
 }
