@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class RoomManager : MonoBehaviour {
    
-    public SpriteRenderer spriteRenderer ;
+    private SpriteRenderer spriteRenderer ;
     public Text roomText;
 
     [Header("RoomsInfo")]
-    public Sprite[] roomsSprites;
     public string[] roomsNames;
-   
+    public Sprite[] roomsSprites;
+    public GameObject[] roomObjects;
 
     int currentRoom;
 	// Use this for initialization
@@ -28,6 +28,11 @@ public class RoomManager : MonoBehaviour {
 		
 	}
 
+    void ChangeRoom(int roomId)
+    {
+        spriteRenderer.sprite = roomsSprites[roomId];
+        roomText.text = roomsNames[roomId];
+    }
 
 
 }
