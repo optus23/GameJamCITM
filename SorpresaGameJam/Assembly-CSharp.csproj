@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\JumpingGame\JumpPlayer.cs" />
     <Compile Include="Assets\Scripts\MainGame\RoomManager.cs" />
     <Compile Include="Assets\Tools\Timer.cs" />
+    <None Include="Assets\Data\data.xml" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/alejandroaureliogn/Documents/GitHub/GameJamCITM/SorpresaGameJam/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

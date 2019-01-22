@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f739bef082bcbc48a48e174f3f48054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  propsGameObject: {fileID: 0}
   roomText: {fileID: 2048408782}
   roomsNames:
   - LIVINGROOM
@@ -163,7 +164,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9768dae62f0dd8647a29db5118b773b5, type: 3}
   - {fileID: 21300000, guid: ac4018d7f4853594ea3a237b2742ba51, type: 3}
   - {fileID: 21300000, guid: 78238ba5418bcdc4d86d776d70efd678, type: 3}
-  roomObjects: []
+  roomObjectsPrefabs: []
 --- !u!1 &283966271
 GameObject:
   m_ObjectHideFlags: 0
